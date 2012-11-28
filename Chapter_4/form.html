@@ -1,0 +1,55 @@
+<html>
+	<head><title>LAMP学员基本信息</title></head>
+	<body>
+		<table align="center" width="500" border="0" cellpadding="2" cellspacing="0">
+			<caption align="center"><h2>LAMP学员基本信息</h2></caption>
+			<form action="server.php" method="post">
+				<tr>     <!--  使用输入域定义姓名输入框 -->
+					<td>姓名：</td>
+					<td><input type="text" name="usrname" size="20"></td>
+				</tr>	
+				<tr>     <!--  使用单选按钮域定义性别输入框 -->
+					<td>性别：</td>
+					<td> 
+						<input type="radio" name="sex" value="1" checked>男
+						<input type="radio" name="sex" value="2">女
+						<input type="radio" name="sex" value="0">保密
+					</td>
+				</tr>	
+				<tr>    <!--  使用下拉列表域定义学历输入框 -->
+					<td>学历：</td>
+					<td>
+						<select name="edu">
+							<option>--请选择--</option>
+							<option value="1">高中</option>
+							<option value="2">大专</option>
+							<option value="3">本科</option>
+							<option value="4">研究生</option>
+							<option value="5">其它</option>
+						</select>
+					</td>
+				</tr>	
+				<tr>    <!--  使用复选按钮域定义选修课程输入框 -->
+					<td>选修课程：</td>
+					<td>
+						<input type="checkbox" name="course[]" value="4">Linux
+						<input type="checkbox" name="course[]" value="5">Apache
+						<input type="checkbox" name="course[]" value="6">MySQL
+						<input type="checkbox" name="course[]" value="7">PHP
+					</td>
+				</tr>
+				<tr>    <!--  使用多行文本输入域定义自我评价输入框 -->
+					<td>自我评介：</td>
+					<td><textarea name="eval" rows="4" cols="40"></textarea></td>
+				</tr>	
+				<tr>     <!--  定义提交和重置两个按钮 -->
+					<td colspan="2" align="center">
+						<input type="submit" name="submit" value="提交">
+						<input type="reset"  name="reset" value="重置">
+					</td>
+				</tr>			
+			</form>
+		</table>
+	</body>	
+</html>
+

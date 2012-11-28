@@ -1,0 +1,11 @@
+<html>                                                                               <!--  网页开始标记 -->
+	<head><title>使用框架定义后台管理平台模型</title></head>                     <!--  设置网页标题 -->
+	<frameset rows="80,*" frameborder="1" border="5">                            <!--  划分上下两行 -->
+ 		<frame src="top.html" name="top" scrolling="no" noresize/>           <!--  顶部大类窗体 -->
+		<frameset cols="200, *">                                             <!--  划分左右两列 -->
+  			<frame src="menu.html" name="menu" scrolling="no" noresize/> <!--  左边菜单窗体 -->
+  			<frame src="main.html" name="main" noresize />               <!--  右边内容窗体 -->
+		</frameset>                                                          <!--  内层框架结束 -->
+	</frameset>                                                                  <!--  外层框架结束 -->
+</html>           
+
